@@ -2,8 +2,22 @@
 @import "components/header";
 @import "components/footer";
 
+
 body {
-    background-color: crimson;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
 }
 
 // Make the partial

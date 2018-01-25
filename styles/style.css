@@ -132,11 +132,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header {
-  width: 90%; }
-
 footer {
   background-color: orange; }
 
-body {
-  background-color: crimson; }
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto; }
