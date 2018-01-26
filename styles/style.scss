@@ -1,23 +1,14 @@
 @import "components/setup";
+@import "components/base.scss";
 @import "components/header";
+@import "components/showcase.scss";
+@import "components/welcome-section.scss";
 @import "components/footer";
 
-
-body {
-    
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 .wrapper {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 // Make the partial

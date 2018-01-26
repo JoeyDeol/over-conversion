@@ -1,3 +1,47 @@
-header {
-    
+// CUSTOM CODE STARTS HERE!
+
+header .header__topBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0px;
+}
+
+.header__navigation {
+    width: 33.3333%;
+}
+
+.header__navigation {
+    ul { 
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 0px;
+        a {
+            @include remCalc(14);
+            color: #1a1a26;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover {
+                color: #f07f84;
+            }
+        }
+    }
+}
+
+.header__logo {
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__icons {
+    width: 33.3333%;
+    display: flex;
+    justify-content: right;
+    .fa {
+        margin-left: 30px;
+        font-size: 26px; 
+        font-weight: 100;
+    }
 }
