@@ -1,0 +1,12 @@
+.bottomBar {
+    margin: 0 auto;
+    background-color: rgb(149,242,236);
+    width: 120px;
+    height: 2px;
+    .inner-bottomBar {
+        margin: 0 auto;
+        background-color: rgb(246,238,239);
+        width: 40px;
+        height: 2px;
+    }
+}

@@ -1,0 +1,39 @@
+.products-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.products__header {
+    h2 {
+        margin-bottom: 30px;
+        color: #1d1d29;
+        font-weight: 400;
+        @include remCalc(32);
+    }
+}
+
+.products__header__nav {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.products__header__nav ul {
+    display: flex;
+    justify-content: center;
+    li {
+        margin: 0px 60px;
+        a {
+            color: #1d1d29;
+            padding-bottom: 10px;
+            &:hover {
+                color: #888890;
+                border-bottom: 1px solid #f07f84;
+            }    
+        }
+    }
+}
+
+.products__header__nav li:first-child{
+    border-bottom: 1px solid #1d1d29;
+    padding-bottom: 10px;
+}
