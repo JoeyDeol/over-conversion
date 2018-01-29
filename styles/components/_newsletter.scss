@@ -1,0 +1,36 @@
+.newsletter-section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 21px;
+    color: #1a1a26;
+    font-weight: 500;
+    @include remCalc(36);
+}
+
+.newsletter-section p {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 60%;
+    color: #888890;
+    line-height: 24px;
+    @include remCalc(14);
+}
+
+.newsletter-section input {
+    margin-top: 74px;
+    padding-bottom: 16px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #888890;
+    background-image: url(../assets/mail.png);
+    background-repeat: no-repeat;
+    background-position: right 5px;
+}
+
+.newsletter-section input::placeholder {
+    color: #888890;
+    @include remCalc(14)
+}
