@@ -1,5 +1,56 @@
+footer {
+    border-top: 1px solid #e6e5e1;
+    border-bottom: 1px solid #e6e5e1;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
 footer .wrapper {
-    height: 500px;
-    width: 100%;
-    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contactSection {
+    width: 55%;
+    img {
+        padding-top: 100px;
+        margin-bottom: 54px;
+    }
+    p {
+        color: #888890;
+        line-height: 24px;
+        @include remCalc(14);
+    }
+}
+
+.contactInfo {
+    margin-top: 30px;
+    p {
+        width: 65%;
+        margin-top: 20px;
+        padding-right: 2%;
+    }
+}
+
+.contactInfo span {
+    color: #1a1a26;
+    font-weight: 700;
+}
+
+.footer__socialIcons {
+    margin-top: 46px;
+    i {
+        margin-right: 30px;
+        @include remCalc(24);
+    }
+}
+
+.footer__socialIcons .fa-twitter {
+    color: #888890;
+}
+
+.footer__accentBar {
+    width: 40px;
+    height: 2px;
+    background-color: #a8edea;
 }

@@ -12,7 +12,7 @@
         margin-bottom: 22px;
         color: #1a1a26; 
         font-weight: 500;
-        @include remCalc(36);
+        @include remCalc(26);
     }
 }
 
@@ -20,16 +20,17 @@
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 26px;
-    width: 85%;
+    width: 80%;
     color: #1a1a26;
     font-weight: 400;
-    @include remCalc(16);
+    @include remCalc(12);
 }
 
 .customerReviews h4 {
     color:  #888890;
     font-weight: 500;
-    @include remCalc(14);
+    text-transform: uppercase;
+    @include remCalc(11);
 }
 
 .review__bullet__segment {
@@ -92,18 +93,25 @@
 }
 
 .videoSection__graphics h2 {
+    font-family: 'press_style_serifregular';
+    padding: 5px 10px;
     color: white;
     font-weight: 400;
-    @include remCalc(98);
+    text-transform: uppercase;
+    @include remCalc(70);
+}
+
+.videoSection__graphics img {
+    width: 126px;
+    height: 66px;
 }
 
 .featurette__videoSection h3 {
     margin: 0 auto; 
-    margin-top: 15px;
     color: rgba(255,255,255,0.5);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
-    @include remCalc(16);
+    @include remCalc(11);
 }

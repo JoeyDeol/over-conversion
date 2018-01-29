@@ -219,6 +219,7 @@ header .header__topBar {
   align-items: center; }
 
 .header__icons {
+  margin-top: 12px;
   width: 33.3333%;
   height: 24px;
   display: -webkit-box;
@@ -586,21 +587,22 @@ header .header__topBar {
     margin-bottom: 22px;
     color: #1a1a26;
     font-weight: 500;
-    font-size: 2.25rem; }
+    font-size: 1.625rem; }
 
 .customerReviews blockquote {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 26px;
-  width: 85%;
+  width: 80%;
   color: #1a1a26;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 0.75rem; }
 
 .customerReviews h4 {
   color: #888890;
   font-weight: 500;
-  font-size: 0.875rem; }
+  text-transform: uppercase;
+  font-size: 0.6875rem; }
 
 .review__bullet__segment {
   margin-top: 53px; }
@@ -657,19 +659,25 @@ header .header__topBar {
   margin-top: 61px; }
 
 .videoSection__graphics h2 {
+  font-family: 'press_style_serifregular';
+  padding: 5px 10px;
   color: white;
   font-weight: 400;
-  font-size: 6.125rem; }
+  text-transform: uppercase;
+  font-size: 4.375rem; }
+
+.videoSection__graphics img {
+  width: 126px;
+  height: 66px; }
 
 .featurette__videoSection h3 {
   margin: 0 auto;
-  margin-top: 15px;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 0.6875rem; }
 
 .blog-section {
   margin-top: 100px;
@@ -787,11 +795,66 @@ header .header__topBar {
     width: 40px;
     height: 2px; }
 
+footer {
+  border-top: 1px solid #e6e5e1;
+  border-bottom: 1px solid #e6e5e1;
+  padding-bottom: 100px;
+  margin-bottom: 100px; }
+
 footer .wrapper {
-  height: 500px;
-  width: 100%;
-  background-color: crimson; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer__contactSection {
+  width: 55%; }
+  .footer__contactSection img {
+    padding-top: 100px;
+    margin-bottom: 54px; }
+  .footer__contactSection p {
+    color: #888890;
+    line-height: 24px;
+    font-size: 0.875rem; }
+
+.contactInfo {
+  margin-top: 30px; }
+  .contactInfo p {
+    width: 65%;
+    margin-top: 20px;
+    padding-right: 2%; }
+
+.contactInfo span {
+  color: #1a1a26;
+  font-weight: 700; }
+
+.footer__socialIcons {
+  margin-top: 46px; }
+  .footer__socialIcons i {
+    margin-right: 30px;
+    font-size: 1.5rem; }
+
+.footer__socialIcons .fa-twitter {
+  color: #888890; }
+
+.footer__accentBar {
+  width: 40px;
+  height: 2px;
+  background-color: #a8edea; }
+
+@font-face {
+  font-family: 'press_style_serifregular';
+  src: url("../styles/fonts/press_style_serif-webfont.woff2") format("woff2"), url("../styles/fonts/press_style_serif-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 .wrapper {
-  max-width: 1140px;
-  margin: 0 auto; }
+  max-width: 1170px;
+  margin: 0 auto;
+  border: 1px solid red; }
