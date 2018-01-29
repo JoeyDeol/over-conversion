@@ -4,13 +4,14 @@
 @import "components/showcase";
 @import "components/welcome-section";
 @import "components/popular-products";
+@import "components/featurette";
 @import "components/bottomBar";
 @import "components/footer";
 
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 // Make the partial

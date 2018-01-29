@@ -1,0 +1,109 @@
+.featurette {
+    display: flex;
+}
+
+.customerReviews {
+    width: 50%;
+    padding-top: 138px;
+    padding-bottom: 137px;
+    background-color: #dddfed;
+    text-align: center;
+    h2 {
+        margin-bottom: 22px;
+        color: #1a1a26; 
+        font-weight: 500;
+        @include remCalc(36);
+    }
+}
+
+.customerReviews blockquote {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    width: 85%;
+    color: #1a1a26;
+    font-weight: 400;
+    @include remCalc(16);
+}
+
+.customerReviews h4 {
+    color:  #888890;
+    font-weight: 500;
+    @include remCalc(14);
+}
+
+.review__bullet__segment {
+    margin-top: 53px;
+}
+
+.review__bullet {
+    display: inline-block;
+    margin: 8px 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #888890;    
+}
+
+.activeBullet {
+    margin: 0px 18px;
+    width: 60px; 
+    height: 60px;
+    border: 3px solid  rgba(136, 136, 144, 20);
+}
+
+.video-overlay {
+    background-color:  rgba(26, 26, 38, 0.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 187px;
+}
+
+.featurette__videoSection {
+    width: 50%;
+    background-image: url(../assets/videoBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.videoPlaybutton {
+    width: 80px; 
+    height: 80px;
+    background-color: #f07f84;
+    border-radius: 50%;
+    img {
+        margin: 30px;
+    }
+}
+
+.playButton-border {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:  rgba(255, 154, 158, 0.3);
+    border-radius: 50%;
+}
+
+.videoSection__graphics {
+    display: flex;
+    justify-content: center;
+    margin-top: 61px;
+}
+
+.videoSection__graphics h2 {
+    color: white;
+    font-weight: 400;
+    @include remCalc(98);
+}
+
+.featurette__videoSection h3 {
+    margin: 0 auto; 
+    margin-top: 15px;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+    @include remCalc(16);
+}

@@ -154,6 +154,10 @@ h4 {
   margin: 0px;
   padding: 0px; }
 
+blockquote {
+  margin: 0px;
+  padding: 0px; }
+
 nav {
   margin: 0px;
   padding: 0px; }
@@ -465,6 +469,208 @@ header .header__topBar {
   border-bottom: 1px solid #1d1d29;
   padding-bottom: 10px; }
 
+.products__grid {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.product__image {
+  position: relative; }
+
+.product__overlay {
+  position: absolute;
+  background-color: rgba(26, 26, 38, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden; }
+  .product__overlay a {
+    display: inline-block;
+    background-color: white;
+    margin-top: 115px;
+    padding-top: 12px;
+    width: 120px;
+    height: 40px;
+    color: #888890;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75rem; }
+    .product__overlay a:hover {
+      background-color: #f07f84;
+      color: #1d1d29; }
+
+.product__image:hover .product__overlay {
+  visibility: visible; }
+
+.products__grid__product {
+  margin-bottom: 48px; }
+
+.products__grid__product h4 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #1a1a26;
+  font-weight: 400;
+  font-size: 0.875rem; }
+
+.products__grid__product p {
+  color: #1a1a26;
+  font-size: 1.125rem; }
+
+.reducedPrice {
+  width: 50%;
+  padding-left: 40px;
+  float: left; }
+
+.products__grid__product .slashedPrice {
+  width: 50%;
+  padding-top: 2px;
+  padding-right: 35px;
+  float: right;
+  color: #888890;
+  text-decoration: line-through;
+  font-size: 0.875rem; }
+
+.productTag {
+  position: absolute;
+  padding: 2px;
+  width: 40px;
+  height: 20px;
+  border-radius: 25px;
+  text-transform: uppercase; }
+
+.productTag p {
+  color: #fefeff;
+  font-size: 0.625rem; }
+
+.hot {
+  background-color: #ff9a9e;
+  top: 10px;
+  right: 10px; }
+
+.discount {
+  background-color: #f6b895;
+  top: 10px;
+  right: 10px; }
+
+.new {
+  background-color: #79dad6;
+  top: 35px;
+  right: 10px; }
+
+.newFlower {
+  background-color: #79dad6;
+  top: 10px;
+  right: 10px; }
+
+.featurette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.customerReviews {
+  width: 50%;
+  padding-top: 138px;
+  padding-bottom: 137px;
+  background-color: #dddfed;
+  text-align: center; }
+  .customerReviews h2 {
+    margin-bottom: 22px;
+    color: #1a1a26;
+    font-weight: 500;
+    font-size: 2.25rem; }
+
+.customerReviews blockquote {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 26px;
+  width: 85%;
+  color: #1a1a26;
+  font-weight: 400;
+  font-size: 1rem; }
+
+.customerReviews h4 {
+  color: #888890;
+  font-weight: 500;
+  font-size: 0.875rem; }
+
+.review__bullet__segment {
+  margin-top: 53px; }
+
+.review__bullet {
+  display: inline-block;
+  margin: 8px 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #888890; }
+
+.activeBullet {
+  margin: 0px 18px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #888890; }
+
+.video-overlay {
+  background-color: rgba(26, 26, 38, 0.5);
+  width: 100%;
+  height: 100%;
+  padding-top: 187px; }
+
+.featurette__videoSection {
+  width: 50%;
+  background-image: url(../assets/videoBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.videoPlaybutton {
+  width: 80px;
+  height: 80px;
+  background-color: #f07f84;
+  border-radius: 50%; }
+  .videoPlaybutton img {
+    margin: 30px; }
+
+.playButton-border {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 154, 158, 0.3);
+  border-radius: 50%; }
+
+.videoSection__graphics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 61px; }
+
+.videoSection__graphics h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 6.125rem; }
+
+.featurette__videoSection h3 {
+  margin: 0 auto;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 1rem; }
+
 .bottomBar {
   margin: 0 auto;
   background-color: #95f2ec;
@@ -483,5 +689,4 @@ footer .wrapper {
 
 .wrapper {
   max-width: 1140px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }

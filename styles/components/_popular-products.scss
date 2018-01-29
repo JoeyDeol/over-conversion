@@ -37,3 +37,117 @@
     border-bottom: 1px solid #1d1d29;
     padding-bottom: 10px;
 }
+
+.products__grid {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__image {
+    position: relative;
+}
+
+.product__overlay {
+    position: absolute;
+    background-color:  rgba(26, 26, 38, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    a {
+        display: inline-block;
+        background-color: white;
+        margin-top: 115px;
+        padding-top: 12px;
+        width: 120px;
+        height: 40px;
+        color: #888890;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include remCalc(12);
+        &:hover {
+            background-color: #f07f84;
+            color: #1d1d29;
+        }
+    }    
+}
+
+.product__image:hover .product__overlay{
+    visibility: visible;
+}
+
+.products__grid__product {
+    margin-bottom: 48px;
+}    
+.products__grid__product h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color:  #1a1a26;
+    font-weight: 400;
+    @include remCalc(14);
+}
+
+.products__grid__product p {
+    color: #1a1a26;
+    @include remCalc(18);
+}
+
+.reducedPrice {
+    width: 50%;
+    padding-left: 40px;
+    float: left;
+}
+
+.products__grid__product .slashedPrice {
+    width: 50%;
+    padding-top: 2px;
+    padding-right: 35px;
+    float: right;
+    color: #888890;
+    text-decoration: line-through;
+    @include remCalc(14);
+}
+
+.productTag {
+    position: absolute;
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.productTag p {
+    color: #fefeff;
+    @include remCalc(10);
+}    
+
+.hot {
+    background-color: #ff9a9e;
+    top: 10px;
+    right: 10px;
+}
+
+.discount {
+    background-color: #f6b895;
+    top: 10px;
+    right: 10px;
+}
+
+.new {
+    background-color: #79dad6;
+    top: 35px; 
+    right: 10px;
+}
+
+.newFlower {
+    background-color: #79dad6;
+    top: 10px; 
+    right: 10px;
+}
+
