@@ -21,6 +21,7 @@
 }
 
 .showcase__arrows {
+    margin: 0px 50px;
     display: flex;
     justify-content: space-between;
 }    
@@ -31,7 +32,7 @@
             display: inline-block;
             background-color: #f07f84;
             margin: 80px;
-            padding: 25px 22px 24px 22px;
+            padding: 25px 35px 24px 35px;
             color: white;
             text-transform: uppercase;
             @include remCalc(16);

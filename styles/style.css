@@ -251,6 +251,7 @@ header .header__topBar {
   font-size: 3.75rem; }
 
 .showcase__arrows {
+  margin: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +265,7 @@ header .header__topBar {
     display: inline-block;
     background-color: #f07f84;
     margin: 80px;
-    padding: 25px 22px 24px 22px;
+    padding: 25px 35px 24px 35px;
     color: white;
     text-transform: uppercase;
     font-size: 1rem; }
@@ -810,11 +811,12 @@ footer .wrapper {
   justify-content: space-between; }
 
 .footer__contactSection {
-  width: 55%; }
+  width: 40%; }
   .footer__contactSection img {
     padding-top: 100px;
-    margin-bottom: 54px; }
+    margin-bottom: 60px; }
   .footer__contactSection p {
+    width: 90%;
     color: #888890;
     line-height: 24px;
     font-size: 0.875rem; }
@@ -823,8 +825,7 @@ footer .wrapper {
   margin-top: 30px; }
   .contactInfo p {
     width: 65%;
-    margin-top: 20px;
-    padding-right: 2%; }
+    margin-top: 15px; }
 
 .contactInfo span {
   color: #1a1a26;
@@ -844,6 +845,73 @@ footer .wrapper {
   height: 2px;
   background-color: #a8edea; }
 
+.services {
+  width: 17.5%;
+  padding-top: 95px; }
+  .services h2 {
+    padding-bottom: 20px;
+    color: #1a1a26;
+    font-weight: 400;
+    font-size: 1.5rem; }
+  .services ul {
+    margin-top: 40px; }
+  .services li {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 0.875rem; }
+
+.services a {
+  color: #888890; }
+  .services a:hover {
+    color: #f07f84; }
+
+.yourAccount {
+  width: 17.5%;
+  padding-top: 95px; }
+  .yourAccount h2 {
+    padding-bottom: 20px;
+    color: #1a1a26;
+    font-weight: 400;
+    font-size: 1.5rem; }
+  .yourAccount ul {
+    margin-top: 40px; }
+  .yourAccount li {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 0.875rem; }
+
+.yourAccount a {
+  color: #888890; }
+  .yourAccount a:hover {
+    color: #f07f84; }
+
+.instagramFeed {
+  width: 25%;
+  padding-top: 95px; }
+  .instagramFeed h2 {
+    padding-bottom: 20px;
+    color: #1a1a26;
+    font-weight: 400;
+    font-size: 1.5rem; }
+
+.footer__imageGrid {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .footer__imageGrid img {
+    margin-bottom: 9px; }
+
+.creditCard-icons {
+  margin-top: 31px; }
+  .creditCard-icons img {
+    margin-right: 15px; }
+
 @font-face {
   font-family: 'press_style_serifregular';
   src: url("../styles/fonts/press_style_serif-webfont.woff2") format("woff2"), url("../styles/fonts/press_style_serif-webfont.woff") format("woff");
@@ -856,5 +924,4 @@ body {
 
 .wrapper {
   max-width: 1170px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
