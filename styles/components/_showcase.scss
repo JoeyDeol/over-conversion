@@ -1,7 +1,7 @@
 .showcase {
     width: 100%;
     text-align: center;
-    padding-top: 295px;
+    padding-top: 226px;
     background-image: url(../assets/showcase-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,14 +10,14 @@
 .showcase h2 {
     color: #888890;
     font-weight: 400;
-    @include remCalc(32);
+    @include remCalc(23);
 }
 
 .showcase h1 {
     margin-top: 30px;
     color: #1d1d29;
     font-weight: 500;
-    @include remCalc(60);
+    @include remCalc(45);
 }
 
 .showcase__arrows {
@@ -32,10 +32,10 @@
             display: inline-block;
             background-color: #f07f84;
             margin: 80px;
-            padding: 25px 35px 24px 35px;
+            padding: 25px 55px 24px 55px;
             color: white;
             text-transform: uppercase;
-            @include remCalc(16);
+            @include remCalc(11);
             &:hover {
                 color: #f07f84;
                 background-color: #888890;
@@ -57,4 +57,34 @@
 
 .showcase__bullet__segment .grey-out {
     background-color: grey; 
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        padding-top: 188px;
+    }
+
+    .showcase__arrows {
+        margin-top: 50px;
+    }
+
+    .showcase__shopNow {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 588px) {
+    .showcase {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 334px) {
+    .showcase {
+        padding-top: 100px;
+    }
+    .showcase__shopNow a {
+        padding-left: 35px;
+        padding-right: 35px; 
+    }
 }

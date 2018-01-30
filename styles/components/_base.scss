@@ -6,6 +6,8 @@ body {
     font-size: 100%; /*Default font-size is 16px*/
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -56,4 +58,15 @@ a {
 p {
     margin: 0px;
     padding: 0px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1170px) {
+    .wrapper {
+        width: 95%;
+    }
 }

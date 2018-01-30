@@ -62,14 +62,15 @@
         min-height: 100%;
     }
     .airPlants__text {
-        width: 210px;
+        width: 46%;
         height: 90px;
         padding-top: 12px;
         background-color: white;
         text-align: center;
         position: absolute;
         top: 50%; 
-        left: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         h3 {
             color: #1a1a26;
             font-weight: 400;
@@ -100,14 +101,15 @@
 }
 
 .officePlants__text {
-    width: 220px;
+    width: 76%;
     height: 90px;
     padding-top: 12px;
     background-color: white;
     text-align: center;
     position: absolute;
-    top: 32%; 
-    left: 15%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     h3 {
         color: #1a1a26;
         font-weight: 400;
@@ -126,14 +128,15 @@
 }
 
 .housePlants__text {
-    width: 220px;
+    width: 76%;
     height: 90px;
     padding-top: 12px;
     background-color: white;
     text-align: center;
     position: absolute;
-    top: 32%; 
-    left: 15%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     h3 {
         color: #1a1a26;
         font-weight: 400;
@@ -151,14 +154,15 @@
 }
 
 .plantContainers__text {
-    width: 250px;
+    width: 41%;
     height: 90px;
     padding-top: 12px;
     background-color: white;
     text-align: center;
     position: absolute;
-    top: 32%; 
-    left: 33%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
     h3 {
         color: #1a1a26;
         font-weight: 400;
@@ -169,3 +173,117 @@
         @include remCalc(16);
     }
 }
+
+@media (max-width: 940px) {
+    .welcome__gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery__airPlants {
+        width: 75%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .gallery__triplePanel {
+        width: 75%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery__airPlants {    
+        .airPlants__text {
+            h3 {
+                padding-top: 8px;
+                @include remCalc(18);
+            }
+            p {
+                @include remCalc(14);
+            }    
+        }
+    }   
+
+    .housePlants__text {
+        h3 {
+            padding-top: 8px;
+            @include remCalc(18);
+        }
+        p {
+            @include remCalc(14);
+        }
+    }
+
+    .officePlants__text {
+        h3 {
+            padding-top: 8px;
+            @include remCalc(18);
+        }
+        p {
+            @include remCalc(14);
+        }         
+    }
+
+    .plantContainers__text {
+        h3 {
+            padding-top: 8px;
+            @include remCalc(18);
+        }
+        p {
+            @include remCalc(14);
+        }
+    }
+}
+
+@media (max-width: 508px) {
+    .welcome__header h2 {
+        padding-bottom: 40px;
+    }   
+
+    .welcome__text {
+        margin-bottom: 50px;
+    }
+
+    .gallery__airPlants {    
+        .airPlants__text {
+            h3 {
+                padding-top: 12px;
+                @include remCalc(16);
+            }
+            p {
+                @include remCalc(12);
+            }    
+        }
+    }   
+
+    .housePlants__text {
+        h3 {
+            padding-top: 16px;
+            @include remCalc(14);
+        }
+        p {
+            @include remCalc(10);
+        }
+    }
+
+    .officePlants__text {
+        h3 {
+            padding-top: 16px;
+            @include remCalc(14);
+        }
+        p {
+            @include remCalc(10);
+        }         
+    }
+
+    .plantContainers__text {
+        h3 {
+            padding-top: 16px;
+            @include remCalc(14);
+        }
+        p {
+            @include remCalc(10);
+        }
+    }
+} 

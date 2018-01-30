@@ -43,3 +43,66 @@ header .header__topBar {
         margin-left: 30px;
     }
 }
+
+.header__icons__bag {
+    position: relative;
+}
+
+.bag__itemsGraphic {
+    background-color: #a8edea;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    position: absolute; 
+    top: -5px;
+    right: -12px;
+    p {
+        padding: 1px 6px;
+        @include remCalc(11);
+    }
+}
+
+@media (max-width: 768px) {
+    header .header__topBar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .header__navigation {
+        width: 50%;
+        margin-top: 10px;
+        order: 3;
+    }
+
+    .header__logo {
+        order: 1;
+    }
+
+    .header__icons {
+        order: 2;
+        justify-content: center;
+        img {
+            margin: 0;
+            padding: 0px 24px;
+        }
+    }
+    
+    .bag__itemsGraphic {
+        right: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__navigation {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__navigation {
+        width: 90%;
+    }
+}
