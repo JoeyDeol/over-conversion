@@ -6,7 +6,7 @@
     width: 50%;
     padding-top: 138px;
     padding-bottom: 137px;
-    background-image: url(../assets/customerBG.jpg);
+    background-image: url("../assets/customerBG.jpg");
     background-size: cover;
     text-align: center;
     h2 {
@@ -63,7 +63,7 @@
 
 .featurette__videoSection {
     width: 50%;
-    background-image: url(../assets/videoBackground.jpg);
+    background-image: url("../assets/videoBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
