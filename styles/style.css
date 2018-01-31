@@ -1317,7 +1317,7 @@ footer .wrapper {
     width: 100%; } }
 
 @media (max-width: 600px) {
-  .footer__socialIcons i {
+  .footer__socialIcons a i {
     font-size: 1rem; } }
 
 @media (max-width: 553px) {
@@ -1325,7 +1325,7 @@ footer .wrapper {
     margin-right: 5px; } }
 
 @media (max-width: 495px) {
-  .footer__socialIcons i {
+  .footer__socialIcons a i {
     font-size: 0.75rem; } }
 
 @font-face {

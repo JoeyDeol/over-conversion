@@ -277,9 +277,11 @@ footer .wrapper {
 
 @media (max-width: 600px) {
     .footer__socialIcons {
-        i {
-            @include remCalc(16);
-        }
+        a {
+            i {
+                @include remCalc(16);
+            }
+        }    
     }    
 }
 
@@ -293,8 +295,10 @@ footer .wrapper {
 
 @media (max-width: 495px) {
     .footer__socialIcons {
-        i {
-            @include remCalc(12);
-        }
+        a {
+            i {
+                @include remCalc(12);
+            }
+        }    
     }    
 }
