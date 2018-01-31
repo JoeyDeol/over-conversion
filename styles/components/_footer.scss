@@ -1,8 +1,8 @@
 footer {
     border-top: 1px solid #e6e5e1;
     border-bottom: 1px solid #e6e5e1;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 41px;
+    margin-bottom: 50px;
 }
 
 footer .wrapper {
@@ -142,6 +142,25 @@ footer .wrapper {
     }
 }
 
+.copyrightInfo {
+    margin-top: 100px;
+    padding-top: 43px;
+    border-top: 1px solid #e6e5e1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+        max-width: 1170px;
+        margin: 0 auto;
+        color: #888890;
+        line-height: 25px;
+        @include remCalc(14);
+        span {
+            color: #1a1a26;
+        }
+    }
+}
+
 @media (max-width: 1062px) {
     footer .wrapper {
         flex-direction: column;
@@ -173,6 +192,7 @@ footer .wrapper {
 
     .footer__socialIcons {
         margin-top: 30px;
+        margin-bottom: 20px;
         i {
             margin: 0px 15px;
         }
