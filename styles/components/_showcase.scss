@@ -39,9 +39,12 @@
             text-transform: uppercase;
             font-weight: 600;
             @include remCalc(12);
+            transform: scale(1);
+            transition: all 0.5s;
             &:hover {
-                color: #f07f84;
+                color: #1d1d29;
                 background-color: #888890;
+                transform: scale(1.1);
             }
         }
 }
@@ -76,10 +79,17 @@
     }
 }
 
+@media (max-width: 600px) {
+    .showcase__shopNow {
+        margin-top: 55px; 
+    }    
+}
+
 @media (max-width: 588px) {
     .showcase {
         padding-top: 120px;
     }
+
 }
 
 @media (max-width: 480px){

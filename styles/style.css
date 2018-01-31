@@ -214,9 +214,15 @@ header .header__topBar {
     font-size: 0.875rem;
     color: #1a1a26;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     .header__navigation ul a:hover {
-      color: #f07f84; }
+      color: #f07f84;
+      border-bottom: 1px solid #1a1a26; }
 
 .header__logo {
   width: 33.3333%;
@@ -343,10 +349,19 @@ header .header__topBar {
     color: white;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     .showcase__shopNow a:hover {
-      color: #f07f84;
-      background-color: #888890; }
+      color: #1d1d29;
+      background-color: #888890;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
 
 .showcase__bullet__segment {
   padding-bottom: 40px; }
@@ -368,6 +383,10 @@ header .header__topBar {
     margin-top: 50px; }
   .showcase__shopNow {
     margin-top: 0px; } }
+
+@media (max-width: 600px) {
+  .showcase__shopNow {
+    margin-top: 55px; } }
 
 @media (max-width: 588px) {
   .showcase {
@@ -451,9 +470,17 @@ header .header__topBar {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .gallery__airPlants .airPlants__text:hover {
+      background-color: #f07f84;
+      -webkit-transform: translate(-50%, -50%) scale(0.9);
+      -ms-transform: translate(-50%, -50%) scale(0.9);
+      transform: translate(-50%, -50%) scale(0.9); }
     .gallery__airPlants .airPlants__text h3 {
       color: #1a1a26;
       font-weight: 400;
@@ -488,9 +515,17 @@ header .header__topBar {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .officePlants__text:hover {
+    background-color: #f07f84;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9); }
   .officePlants__text h3 {
     color: #1a1a26;
     font-weight: 400;
@@ -513,9 +548,17 @@ header .header__topBar {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .housePlants__text:hover {
+    background-color: #f07f84;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9); }
   .housePlants__text h3 {
     color: #1a1a26;
     font-weight: 400;
@@ -537,9 +580,17 @@ header .header__topBar {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .plantContainers__text:hover {
+    background-color: #f07f84;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9); }
   .plantContainers__text h3 {
     color: #1a1a26;
     font-weight: 400;
@@ -1072,12 +1123,17 @@ footer .wrapper {
 
 .footer__socialIcons {
   margin-top: 46px; }
-  .footer__socialIcons i {
-    margin-right: 30px;
-    font-size: 1.5rem; }
+  .footer__socialIcons a {
+    color: #1a1a26;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .footer__socialIcons a i {
+      margin-right: 30px;
+      font-size: 1.5rem; }
 
-.footer__socialIcons .fa-twitter {
-  color: #888890; }
+.footer__socialIcons a:hover {
+  color: #f07f84; }
 
 .footer__linksSection {
   width: 60%;
@@ -1109,7 +1165,10 @@ footer .wrapper {
     font-size: 0.875rem; }
 
 .services a {
-  color: #888890; }
+  color: #888890;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
   .services a:hover {
     color: #f07f84; }
 
@@ -1274,3 +1333,5 @@ footer .wrapper {
   src: url("../styles/fonts/press_style_serif-webfont.woff2") format("woff2"), url("../styles/fonts/press_style_serif-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */

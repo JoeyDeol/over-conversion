@@ -39,14 +39,18 @@ footer .wrapper {
 
 .footer__socialIcons {
     margin-top: 46px;
-    i {
-        margin-right: 30px;
-        @include remCalc(24);
-    }
+    a {
+        color: #1a1a26;
+        transition: all 0.5s;
+        i {
+            margin-right: 30px;
+            @include remCalc(24);
+        }
+    }    
 }
 
-.footer__socialIcons .fa-twitter {
-    color: #888890;
+.footer__socialIcons a:hover {
+    color: #f07f84;
 }
 
 .footer__linksSection {
@@ -82,6 +86,7 @@ footer .wrapper {
 
 .services a {
     color: #888890;
+    transition: all 0.5s;
     &:hover {
         color: #f07f84;
     }    

@@ -18,8 +18,12 @@ header .header__topBar {
             color: #1a1a26;
             font-weight: 700;
             text-transform: uppercase;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s;
             &:hover {
                 color: #f07f84;
+                border-bottom: 1px solid #1a1a26;
             }
         }
     }
