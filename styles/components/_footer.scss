@@ -49,6 +49,12 @@ footer .wrapper {
     color: #888890;
 }
 
+.footer__linksSection {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer__accentBar {
     width: 40px;
     height: 2px;
@@ -56,7 +62,7 @@ footer .wrapper {
 }
 
 .services {
-    width: 17.5%;
+    width: 30%;
     padding-top: 95px;
     h2 {
         padding-bottom: 20px;
@@ -82,7 +88,7 @@ footer .wrapper {
 }
 
 .yourAccount {
-    width: 17.5%;
+    width: 30%;
     padding-top: 95px; 
     h2 {
         padding-bottom: 20px;
@@ -109,7 +115,7 @@ footer .wrapper {
 
 
 .instagramFeed {
-    width: 25%;
+    width: 40%;
     padding-top: 95px; 
     h2 {
         padding-bottom: 20px;
@@ -134,4 +140,136 @@ footer .wrapper {
     img {
         margin-right: 15px;
     }
+}
+
+@media (max-width: 1062px) {
+    footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__contactSection {
+        width: 50%;
+        text-align: center;
+        img {
+            margin: 0 auto; 
+            margin-bottom: 30px;
+        }
+
+        p {
+            width: 100%;
+        }
+
+    }
+
+    .contactInfo{
+        margin-top: 15px;
+        p {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .footer__socialIcons {
+        margin-top: 30px;
+        i {
+            margin: 0px 15px;
+        }
+    } 
+    
+    .footer__linksSection {
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer__accentBar {
+        margin: 0 auto;
+    }
+
+    .services {
+        width: 50%;
+        padding-top: 30px;
+        h2 {
+            padding-bottom: 10px;
+        }
+        ul {
+            margin-top: 20px;
+        }        
+    }
+
+    .yourAccount {
+        width: 50%;
+        padding-top: 30px;
+        h2 {
+            padding-bottom: 10px;
+        }
+        ul {
+            margin-top: 20px;
+        }
+    }
+
+    .instagramFeed {
+        width: 60%;
+        padding-top: 30px;
+        h2 {
+            padding-bottom: 10px;
+        }        
+    }
+
+    .footer__imageGrid {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 940px) {
+    .services {
+        width: 100%
+    }
+
+    .yourAccount {
+        width: 100%;
+    }
+
+    .instagramFeed {
+        width: 75%;
+    }
+}
+
+@media (max-width: 750px) {
+    .instagramFeed {
+        width: 85%;
+    }
+}
+
+@media (max-width: 650px) {
+    .instagramFeed {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer__socialIcons {
+        i {
+            @include remCalc(16);
+        }
+    }    
+}
+
+@media (max-width: 553px) {
+    .creditCard-icons {
+        img {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (max-width: 495px) {
+    .footer__socialIcons {
+        i {
+            @include remCalc(12);
+        }
+    }    
 }

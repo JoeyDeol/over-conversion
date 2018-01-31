@@ -40,17 +40,17 @@
 
 .review__bullet {
     display: inline-block;
-    margin: 8px 15px;
-    width: 40px;
-    height: 40px;
+    margin: 8px 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #888890;    
 }
 
 .activeBullet {
-    margin: 0px 18px;
-    width: 60px; 
-    height: 60px;
+    margin: 0px 13px;
+    width: 50px; 
+    height: 50px;
     border: 3px solid  rgba(136, 136, 144, 20);
 }
 
@@ -90,7 +90,7 @@
 .videoSection__graphics {
     display: flex;
     justify-content: center;
-    margin-top: 61px;
+    margin-top: 60px;
 }
 
 .videoSection__graphics h2 {
@@ -115,4 +115,29 @@
     letter-spacing: 5px;
     font-weight: 400;
     @include remCalc(11);
+}
+
+@media (max-width: 940px) {
+    .featurette {
+        flex-direction: column;
+    }
+
+    .customerReviews{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;        
+    }
+
+    .featurette__videoSection {
+        width: 100%;
+    }
+
+    .videoSection__graphics {
+        margin-top: 25px;
+    }
+
+    .video-overlay {
+        padding-top: 150px;
+        padding-bottom: 155px;
+    }
 }

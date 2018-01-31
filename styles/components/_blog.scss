@@ -52,3 +52,31 @@
     }
 }
 
+@media (max-width: 940px) {
+    .blog__posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog__posts__article {
+        width: 50%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog__posts {
+        margin-top: 40px;
+    }
+
+    .blog__posts__article {
+        width: 65%;
+    }
+}
+
+@media (max-width: 640px) {
+    .blog__posts__article {
+        width: 70%;
+    }
+}
+

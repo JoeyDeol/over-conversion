@@ -16,7 +16,7 @@ header .header__topBar {
         a {
             @include remCalc(14);
             color: #1a1a26;
-            font-weight: 400;
+            font-weight: 700;
             text-transform: uppercase;
             &:hover {
                 color: #f07f84;
